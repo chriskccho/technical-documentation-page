@@ -7,6 +7,26 @@
 body {
     display:flex;
     flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#topic {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+#title {
+    width: 70%;
+    font-weight: bold;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    
 }
 
 #navbar {
@@ -20,7 +40,6 @@ body {
 #navbar ul {
     text-align:center;
     overflow: scroll;
-    list-style-type: none;
 }
 
 #navbar ul li{
@@ -34,12 +53,34 @@ body {
 
 }
 
+.nav-link {
+    text-decoration: none;  
+    color: black;
+}
 #navbar ul li:hover {
-    background-color: black;
+    background-color: 	gainsboro;
 }
 
+.nav-link:hover {
+    font-weight:bold;
+}
 
 #main-doc {
-    margin-left: 300px;
+    margin-left: 350px;
 }
+
+.main-section {
+    margin-top: 30px;
+}
+
+#main-doc .main-section p{
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+
+
+
+
 
