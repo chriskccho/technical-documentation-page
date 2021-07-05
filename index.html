@@ -24,6 +24,7 @@
             <li><a class="nav-link" href="#Functions">Functions</a></li>
             <li><a class="nav-link" href="#Classes">Classes</a></li>
             <li><a class="nav-link" href="#Methods">Methods</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -117,19 +118,37 @@
             <header class="section-header">
                 <h1>Functions</h1>
             </header>
+            <p>Functions are a way to store and re-use a set of code.</p>
+            <div class="code"><code>def print_something(x):<br><pre id="t1">    print(x)</pre>x = "hello"<br>print_something(x)</code></div>
+            <p>The above code is an example of a function that prints whatever the user passes to it. The function is created with <code>def print_something():</code> where <code>print_something</code> is the name of the function. Hence, this code will print to console the string <code>"hello"</code></p>
+            <p>You can also pass multiple parameters and ask the function to return the results so you can do further things with it:</p>
+            <div class="code"><code>def add_together(x, y):<br><pre id = "t1">    return x + y</pre>x = 3<br>y = 2<br>z = add_together(x, y)</code></div>
+            <p>The above code has a function <code>add_together</code> that takes two parameters and returns the sum. The variable <code>z</code> stores the results of the function, hence the value of <code>z</code> will be <code>5</code>.</p>
         </section>
         <section class="main-section" id="Classes">
             <header class="section-header">
                 <h1>Classes</h1>
             </header>
+            <p>Classes are the core to OOP, it allows you to encapsulate different variables and functions inside what is called an "Object" (an instance of a class) and re-use the class over and over again. Essentially, classes are a template for an object in which upon creating it, you can create multiple objects that utilizes the same attributes and methods inside.</p>
+            <div class="code"><code>class Person:<br><pre id="t1">    def __init__(self, name, age):</pre><pre id="t1">        self.name = name</pre><pre id = "t1">        self.age = age</pre><br>p1 = Person("John", 36)<br><br>print(p1.name)<br>print(p1.age)</code></div>
+            <p>You can create a class by using <code>Class classname:</code> and the <code>__init__()</code> function is executed when the class is being initiated. When the code <code>p1 = Person("John", 36)</code> executes, it assigns the passed parameters into the object's attributes. In this example, the <code>name</code> and <code>age</code> are passed as <code>"John"</code> and <code>36</code> respectively and assigned as such in the object.</p>
+            <p>You can access the attributes you have created inside the object by using the <code>.</code> operator. If i want to access the name of an object called <code>p1</code> I can use the statement <code>p1.name</code>. In the case of the above code, the printed statement of <code>p1.name</code> will be <code>"John"</code>.</p>
         </section>
         <section class="main-section" id="Methods">
             <header class="section-header">
                 <h1>Methods</h1>
             </header>
+            <p>Functions inside a class are called methods, they are useful since it abstracts the function away from the code and keeps it inside of the object.</p>
+            <div class="code"><code>class Person:<br><pre id="t1">    def __init__(self, name, age):</pre><pre id="t1">        self.name = name</pre><pre id = "t1">        self.age = age</pre><br><pre id="t1">    def myfunc(self):</pre><pre id="t1">        print("Hello my name is " + self.name)</pre><br>p1 = Person("John", 36)<br>p1.myfunc()</code></div>
+            <p>The method <code>myfunc()</code> takes its attribute <code>name</code> and prints out the statement as specified above. Hence when the object <code>p1</code> is initialized with the name <code>"John"</code> the statement <code>p1.myfunc()</code> will output the string <code>"Hello my name is John"</code>.</p>
         </section>
-
+        <section class="main-section" id="References">
+            <header class="section-header">
+                <h1>References</h1>
+            </header>
+            <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/">W3Schools</a>.</p>
+        </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-
 </html>

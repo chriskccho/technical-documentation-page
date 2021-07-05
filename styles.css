@@ -67,6 +67,7 @@ body {
 
 #main-doc {
     margin-left: 350px;
+    margin-bottom: 20px;
 }
 
 .main-section {
@@ -97,6 +98,16 @@ section ul {
 
 #t1 {
     tab-size: 4;
+}
+
+@media all and (max-width: 480px) {
+    #navbar {
+        display:none;
+    }
+
+    #main-doc {
+        margin-left: 20px;
+    }
 }
 
 
