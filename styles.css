@@ -90,6 +90,14 @@ body {
     
 }
 
+section ul {
+    padding-left: 55px;
+    padding-right: 30px;
+}
+
+#t1 {
+    tab-size: 4;
+}
 
 
 

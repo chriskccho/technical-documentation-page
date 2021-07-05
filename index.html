@@ -39,27 +39,79 @@
             </header>
             <p>To get started with writing Python, open an IDE and write your first "Hello World" Python code:</p>
             <div class="code"><code>print("Hello World")</code></div>
-            <p>The <code>print()</code> statement outputs the string inside to the console. The above statement will output the string "Hello World".</p>
+            <p>The <code>print()</code> statement outputs the string inside to the console. The above statement will output the string "Hello World". You can also pass other data types such as integer to the print statement.</p>
         </section>
         <section class="main-section" id="Variables">
             <header class="section-header">
                 <h1>Variables</h1>
             </header>
+                <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+                <div class="code"><code>x = 5<br>x = "hello"</code></div>
+                <p>Note that you do not require any <code>;</code> at the end of each statement. You can also change the variable to any other data types and it will switch based on your value.</p>
         </section>
         <section class="main-section" id="Data_Types">
             <header class="section-header">
                 <h1>Data Types</h1>
             </header>
+                <p>Python has many different data types for use, the following list are all the data types in these categories:</p>
+                <ul>
+                    <li>Text Type: <code>str</code></li>
+                    <li>Numeric Types: <code>int</code>, <code>float</code>, <code>complex</code></li>
+                    <li>Sequence Types: <code>list</code>, <code>tuple</code>, <code>range</code></li>
+                    <li>Mapping Type: <code>dict</code></li>
+                    <li>Set Types: <code>set</code>, <code>frozenset</code></li>
+                    <li>Boolean Type: <code>bool</code></li>
+                    <li>Binary Types: <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></li>
+                </ul>
+                <p>The above data types can be used for many different applications and it is a fundamental component of the Python programming language.</p>
+                <ul>
+                    <li>Text type <code>str</code> can be used to hold text, such as <code>x = "Hello World"</code>.</li>
+                    <li>Numeric types can hold numbers, <code>int</code> for integers <code>flaot</code> for decimal numbers and <code>complex</code> for complex numbers.</li>
+                    <li>Sequence types are essentially arrays but each data type of <code>list</code>, <code>tuple</code>, and <code>range</code> are used for different purposes.</li>
+                    <li>Mapping type <code>dict</code> is used to access values via a key, the key will point to the value corresponding to it and it is a very useful data type.</li>
+                    <li>Set types such as <code>set</code> and <code>frozenset</code> are similar to the sequence types and mapping types but the key difference is that they do not allow duplicate values.</li>
+                    <li>Boolean type <code>bool</code> allows two values: either <code>True</code> or <code>False</code>.</li>
+                    <li>Binary types are used for working with binary data, <code>byte</code> and <code>bytearrays</code> are used to manipulate binary data, and are supported by buffer protocol, named <code>memoryview</code>.</li>
+                </ul>
         </section>
         <section class="main-section" id="Conditional_Statements">
             <header class="section-header">
                 <h1>Conditional Statements</h1>
             </header>
+            <p>Conditional statements are used to simply use a condition that the code must satisfy in order to execute.</p>
+            <div class="code"><code>x = 1<br>if x == 1:<br><pre id=#t1>    x += 1</pre></code></div>
+            <p>The above code will run as follows:</p>
+            <ul>
+                <li>The variable <code>x</code> is set to <code>1</code>.</li>
+                <li>The <code>if</code> statement checks if the <code>x</code> value is equal to <code>1</code>.</li>
+                <li>Since the condition is satisfied, the code in the indented section executes and <code>x = 2</code> after the code executes.</li>
+            </ul>
+            <p>It is important to note since python does not use any <code>;</code> or <code>{}</code> like other programming languages, it is important to indent the contents of the <code>if</code> statement as this is how Python recognizes it.</p>
+            <p>You can also have multiple conditions for conditional statements:</p>
+            <div class="code"><code>if x == 1:<br><pre id=#t1>    x += 1</pre>elif x == 2:<pre id="t1">    x += 2</pre>else: <br><pre id="t1">    x += 3</pre></code></div>
+            <p>The above code will run as follows:</p>
+            <ul>
+                <li>The first conditional statement <code>if x == 1</code> will check if <code>x</code> is equal to <code>1</code>.</li>
+                <li>If not, it will check the statement <code>elif x == 2</code> if <code>x</code> is equal to <code>2</code>.</li>
+                <li>If both statements are not satified, the code within the <code>else</code> statement will execute.</li>
+            </ul>
         </section>
         <section class="main-section" id="Loops">
             <header class="section-header">
                 <h1>Loops</h1>
             </header>
+            <p>Loops can be used to execute code multiple times while the condition is satisfied.</p>
+            <div class="code"><code>x = 1<br>while x &lt; 3:<br><pre id="t1">    x += 1</pre></code></div>
+            <p>The above code will run as follows:</p>
+            <ul>
+                <li>The section of code within the <code>while</code> statement will run as long as the condition specified is satisfied.</li>
+                <li>With <code>x = 1</code>, this is less than <code>3</code>, hence the code will add <code>1</code> to the <code>x</code> value.</li>
+                <li>Now with <code>x = 2</code>, the code is executed again, as <code>2 &lt; 3</code>.</li>
+                <li>Now with <code>x = 3</code>, <code>3</code> is not less than <code>3</code>, thus the loop stops.</li>
+            </ul>
+            <p>There are other ways to create loops into your code, the below being another example:</p>
+            <div class="code"><code>x = 1<br>for i in range(6):<br><pre id="t1">    x += 1</pre></code></div>
+            <p>The above code has <code>i</code> in it, which increments each time the loop executes, the loop will execute <code>6</code> times as specified in <code>range(6)</code>.</p>
         </section>
         <section class="main-section" id="Functions">
             <header class="section-header">
